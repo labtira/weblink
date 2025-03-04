@@ -53,11 +53,11 @@ export default function Pricing() {
           <div
             key={tier.id}
             className={classNames(
-              tier.featured ? ' bg-gray-900 shadow-2xl' : 'bg-darkgrey sm:mx-8 lg:mx-0',
+              tier.featured ? ' bg-primary shadow-2xl' : 'bg-black sm:mx-8 lg:mx-0',
               tier.featured
                 ? ''
                 : tierIdx === 0
-                  ? 'rounded-t-3xl sm:rounded-b-none bg-primary  lg:rounded-tr-none lg:rounded-bl-3xl'
+                  ? 'rounded-t-3xl sm:rounded-b-none bg-black  lg:rounded-tr-none lg:rounded-bl-3xl'
                   : 'sm:rounded-t-none lg:rounded-tr-3xl lg:rounded-bl-none',
               'rounded-3xl p-8 ring-1 ring-primary sm:p-10',
             )}
@@ -108,9 +108,9 @@ export default function Pricing() {
               aria-describedby={tier.id}
               className={classNames(
                 tier.featured
-                  ? 'bg-indigo-500 text-white bg-primary shadow-xs hover:bg-indigo-400 focus-visible:outline-indigo-500'
-                  : 'text-indigo-600 ring-1 bg-black ring-inset hover:ring-indigo-300 focus-visible:outline-indigo-600',
-                'mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10',
+                  ? 'bg-indigo-600 ring-1 text-white ring-black bg-black shadow-xs'
+                  : 'text-indigo-600 ring-1 bg-primary ring-primary  ',
+                'mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold  sm:mt-10',
               )}
             >
               Get started

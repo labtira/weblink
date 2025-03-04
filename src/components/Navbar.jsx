@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <div className=''>
       <nav className="bg-black fixed w-full shadow-greyshadow shadow-sm">
-      <div className='text-center text-sm bg-primary w-full py-1.5 text-white '>Welcome to Valued Academy</div>
+      <div className='text-center text-xs bg-primary w-full py-1 text-white '>Welcome to Weblink</div>
       <div className="mx-auto px-5 sm:px-0 lg:px-1 sm:max-w-screen-md ">
         <div className="relative flex items-center justify-between h-16 ">
           <div className="absolute inset-y-0 right-0 flex items-center sm:hidden ">
