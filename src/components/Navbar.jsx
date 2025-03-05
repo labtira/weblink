@@ -62,7 +62,7 @@ const Navbar = () => {
           <Link reloadDocument to="/#about"><a  className="text-white hover:bg-gray-100 block px-3 py-3 rounded-md text-xs font-medium">About</a></Link>
           <Link reloadDocument to="/#services"><a  className="text-white hover:bg-gray-100 block px-3 py-3 rounded-md text-xs font-medium">Services</a></Link>
           <Link reloadDocument to="/#contact"><a  className="text-white hover:bg-gray-100 block px-3 py-3 rounded-md text-xs font-medium">Contact</a></Link>
-          <Link reloadDocument to="/#courses" className='flex items-center bg-primary text-white px-10 h-10 mx-2 my-2 justify-center rounded-md text-xs hover:bg-blue-700 font-bold'><FontAwesomeIcon className='w-4 h-4 mr-1' icon={faUserPlus} />Join</Link>
+          <Link reloadDocument to="/#courses" className='flex items-center bg-primary text-white px-10 h-10 mx-2 my-2 justify-center rounded-md text-xs hover:bg-blue-700 font-bold'>Get Started</Link>
         </div>
       </div>
     </nav>

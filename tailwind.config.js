@@ -17,7 +17,7 @@ module.exports = {
       white: "#ffffff",
       grey: "#808080",
       greyshadow: "hsla(0, 0%, 79%, 0.20)",
-      darkgrey: "#36393e",
+      darkgrey: "#171926",
       lightgrey: "hsla(0, 0%, 100%, 0.7)",
       green: "#00FF00"
     },

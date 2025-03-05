@@ -7,16 +7,17 @@ import Contact from '../components/Contact';
 import Navbar from '../components/Navbar';
 import Pricing from '../components/Pricing';
 import Grid from '../components/Grid';
-
+import ProjectSection from '../components/ProjectSection';
 const Home = () => {
   return (
     <div className='bg-black'>
       <Navbar />
       <HeroSection />
       <About />
-      <Services />
       <Grid/>
+      <ProjectSection/>
       <Pricing/>
+      <Services />
       <Contact />
     </div>
   );
