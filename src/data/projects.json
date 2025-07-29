@@ -23,7 +23,7 @@
       "id": 3,
       "title": "Postex Logo",
       "category": "design",
-      "description": "A modern logo for a post office.",
+      "description": "A modern logo for a web agency.",
       "image": "/img/Projects/postexlogo.png",
       "technologies": ["Illustrator"],
       "link": "https://itsmehdi.co"
@@ -32,8 +32,8 @@
       "id": 4,
       "title": "Postex Website",
       "category": "web",
-      "description": "A modern website for a post office.",
-      "image": "/img/Projects/webpostex.png",
+      "description": "A modern website for a web agency.",
+      "image": "/img/Projects/postexweb.png",
       "technologies": ["React", "Tailwind CSS"],
       "link": "https://itsmehdi.co"
     },
