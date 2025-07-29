@@ -33,7 +33,7 @@ else {
         {project ? (
           <div>
             {/* Project Image */}
-            <section className="rounded-[16px] overflow-hidden transition-all duration-500 backdrop-blur-xl bg-gradient-to-b from-black/10 to-black/30  shadow-[0_-8px_32px_rgba(0,0,0,0.12)] border border-[#282828]  mb-8 mt-24 md:mt-20" aria-label="Project showcase image">
+            <section className="rounded-[16px] overflow-hidden transition-all duration-500 backdrop-blur-xl bg-gradient-to-b from-black/10 to-black/30  shadow-[0_-8px_32px_rgba(0,0,0,0.12)] border border-[#282828]  mb-8 mt-20 sm:mt-24 md:mt-20" aria-label="Project showcase image">
               <div className="aspect-video">
                 <img 
                   src={project.image} 

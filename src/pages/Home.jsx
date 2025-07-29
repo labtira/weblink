@@ -17,7 +17,7 @@ function Home() {
         <LogoNavbar />
 
         {/* Hero Section */}
-        <div className=" text-white pt-8">
+        <div className=" text-white pt-4 sm:pt-8">
           <div className="max-w-full md:max-w-screen-md mx-auto  py-8">
             {/* Services Section */}
             

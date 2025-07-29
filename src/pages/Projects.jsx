@@ -48,7 +48,7 @@ function Projects() {
         
 
         {/* Category Filters */}
-        <div className="flex justify-center items-center mb-5 mt-16">
+        <div className="flex justify-center items-center mb-5 mt-12 sm:mt-16">
           <div className="transition-all duration-500 backdrop-blur-xl bg-gradient-to-b from-black/10 to-black/30  shadow-[0_-8px_32px_rgba(0,0,0,0.12)] p-1.5 rounded-full border border-[#282828] ">
             <div className="flex items-center">
               <button

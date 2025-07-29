@@ -38,7 +38,7 @@ function Contact() {
         <LogoNavbar />
         
         {/* Contact Form Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-6 mt-24 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-6 mt-20 sm:mt-24 mb-16">
           {/* Contact Info */}
           <div className="rounded-[16px] transition-all duration-500 backdrop-blur-xl bg-gradient-to-b from-black/10 to-black/30  shadow-[0_-8px_32px_rgba(0,0,0,0.12)] p-6 md:p-8 border border-[#282828] ">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
