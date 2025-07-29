@@ -55,7 +55,7 @@ function Contact() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Email</h3>
-                    <p className="text-zinc-500 text-xs">itsmehdi.co.0707547044@gmail.com</p>
+                    <p className="text-zinc-500 text-xs">exemple@gmail.com</p>
                   </div>
                 </div>
               </a>
