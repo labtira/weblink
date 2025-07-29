@@ -1,22 +1,23 @@
 {
   "projects": [
+    
     {
       "id": 1,
-      "title": "Moroccan Cars Website",
-      "category": "web",
-      "description": "A modern website for a car rental company.",
-      "image": "/img/Projects/MCars.png",
-      "technologies": ["React", "Tailwind CSS"],
-      "link": "https://moroccancars.pages.dev/"
-    },
-    {
-      "id": 2,
       "title": "Valued Logo",
       "category": "design",
       "description": "A modern logo for an online school.",
       "image": "/img/Projects/valuedlogo.png",
       "technologies": ["Illustrator"],
       "link": "https://itsmehdi.co"
+    },
+    {
+      "id": 2,
+      "title": "Moroccan Cars Website",
+      "category": "web",
+      "description": "A modern website for a car rental company.",
+      "image": "/img/Projects/MCars.png",
+      "technologies": ["React", "Tailwind CSS"],
+      "link": "https://moroccancars.pages.dev/"
     },
     {
       "id": 3,
