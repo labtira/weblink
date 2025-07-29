@@ -1,0 +1,67 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Moroccan Cars Website",
+      "category": "web",
+      "description": "A modern website for a car rental company.",
+      "image": "/img/Projects/MCars.png",
+      "technologies": ["React", "Tailwind CSS"],
+      "link": "https://moroccancars.pages.dev/"
+    },
+    {
+      "id": 2,
+      "title": "Valued Logo",
+      "category": "design",
+      "description": "A modern logo for an online school.",
+      "image": "/img/Projects/valuedlogo.png",
+      "technologies": ["Illustrator"],
+      "link": "https://itsmehdi.co"
+    },
+    {
+      "id": 3,
+      "title": "Postex Logo",
+      "category": "design",
+      "description": "A modern logo for a post office.",
+      "image": "/img/Projects/postexlogo.png",
+      "technologies": ["Illustrator"],
+      "link": "https://itsmehdi.co"
+    },
+    {
+      "id": 4,
+      "title": "Postex Website",
+      "category": "web",
+      "description": "A modern website for a post office.",
+      "image": "/img/Projects/webpostex.png",
+      "technologies": ["React", "Tailwind CSS"],
+      "link": "https://itsmehdi.co"
+    },
+    {
+      "id": 5,
+      "title": "Refined Logo",
+      "category": "design",
+      "description": "A modern logo for a rental car company.",
+      "image": "/img/Projects/refinedlogo.png",
+      "technologies": ["Illustrator"],
+      "link": "https://itsmehdi.co"
+    },
+    {
+      "id": 6,
+      "title": "Weblink Logo",
+      "category": "design",
+      "description": "A modern logo for a web design agency.",
+      "image": "/img/Projects/weblinklogo.png",
+      "technologies": ["Illustrator"],
+      "link": "https://itsmehdi.co"
+    },
+    {
+      "id": 7,
+      "title": "Sirada Logo",
+      "category": "design",
+      "description": "A modern logo for a rental car agency.",
+      "image": "/img/Projects/carlogo.png",
+      "technologies": ["Illustrator"],
+      "link": "https://itsmehdi.co"
+    }
+  ]
+}

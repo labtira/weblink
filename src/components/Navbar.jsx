@@ -1,73 +1,49 @@
-import React, { useState } from 'react';
-import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUserPlus } from '@fortawesome/free-solid-svg-icons';
-import logo from '../assets/img/WEBLINKW.PNG';
-import { Link } from "react-router-dom";
+import { Link, useLocation } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
-  
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [location.pathname]);
+
+  const navLinks = [
+    { path: '/', label: 'Home', icon: <i className="fas fa-home text-xl flex items-center justify-center w-full h-full" /> },
+    { path: '/projects', label: 'Projects', icon: <i className="fas fa-diagram-project text-xl flex items-center justify-center w-full h-full" /> },
+    { path: '/contact', label: 'Contact', icon: <i className="fas fa-envelope text-xl flex items-center justify-center w-full h-full" /> }
+  ];
 
   return (
-    <div className=''>
-      <nav className="bg-black fixed w-full shadow-greyshadow shadow-sm">
-      <div className='text-center text-xs bg-primary w-full py-1 text-white '>Welcome to Weblink</div>
-      <div className="mx-auto px-5 sm:px-0 lg:px-1 sm:max-w-screen-md ">
-        <div className="relative flex items-center justify-between h-16 ">
-          <div className="absolute inset-y-0 right-0 flex items-center sm:hidden ">
-            <button
-              type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-white   focus:outline-none "
-              aria-controls="mobile-menu"
-              aria-expanded="false"
-              onClick={toggleMenu}
+    <nav className={`fixed bottom-0 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-500 backdrop-blur-xl bg-gradient-to-b from-black/10 to-black/30 border rounded-3xl border-[#222222] shadow-[0_-8px_32px_rgba(0,0,0,0.12)] w-[calc(100%-40px)] max-w-[310px] my-[15px] `}>
+      <div className="max-w-[300px] mx-auto px-4 py-3">
+        <div className="flex items-center justify-around w-full gap-4">
+          {navLinks.map((link) => (
+            <Link
+              key={link.path}
+              to={link.path}
+              className={`flex-1 flex items-center justify-center rounded-xl font-medium transition-all duration-300 ease-out group focus:outline-none ${location.pathname === link.path ? 'text-white' : 'text-zinc-400 [@media(hover:hover)]:hover:text-white'}`}
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
-              {isOpen ? (
-                <XIcon className="block h-6 w-6" aria-hidden="true" />
-              ) : (
-                <MenuIcon className="block h-6 w-6" aria-hidden="true" />
-              )}
-            </button>
-          </div>
-          <div className="flex-1 flex items-center justify-center md:items-stretch md:justify-between">
-            <div className="flex-shrink-0 text-white text-lg font-bold h-8">
-            <Link to="/" >
-            <a href="#">
-            <img src={logo} alt="" className='h-full'/>
-            </a>
-            </Link>
-            </div>
-            <div className="hidden sm:block sm:ml-6">
-              <div className="flex space-x-4">
-                <a href="#" className="text-white hover:bg-gray-100 hover:text-primary  px-3 py-2 rounded-md text-sm font-medium"><Link reloadDocument to="/">Home</Link></a>
-                <a href="#about" className="text-white hover:bg-gray-100  hover:text-primary px-3 py-2 rounded-md text-sm font-medium"><Link reloadDocument to="/#about">About</Link></a>
-                <a href="#services" className="text-white hover:bg-gray-100  hover:text-primary px-3 py-2 rounded-md text-sm font-medium"><Link reloadDocument to="/#services">Services</Link></a>
-                <a href="#contact" className="text-white hover:bg-gray-100  hover:text-primary px-3 py-2 rounded-md text-sm font-medium"><Link reloadDocument to="/#contact">Contact</Link></a>
-                <a href="#" className="bg-primary text-white px-4 flex items-center rounded-md text-xs hover:bg-blue-700 font-bold"><Link reloadDocument to="/#courses" className='flex items-center'>Get Started</Link></a>
+              <div className={`flex justify-center items-center  w-[60px] h-[60px] rounded-xl transition-all duration-300 ease-out ${location.pathname === link.path ? 'bg-white text-black backdrop-blur-md shadow-[0_4px_12px_rgba(255,255,255,0.05)]' : '[@media(hover:hover)]:group-hover:bg-white/5'}`}>
+                {link.icon} 
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className={`sm:hidden ${isOpen ? 'block' : 'hidden'} fixed h-full w-full bg-black bg-opacity-60`} id="mobile-menu">
-        <div className="px-2 pt-2 pb-5 space-y-1 text-center absolute bg-black w-full shadow-greyshadow shadow-sm ">
-          <Link reloadDocument to="/"><a  className="text-white hover:bg-gray-100 block px-3 py-3 rounded-md text-xs font-medium">Home</a></Link>
-          <Link reloadDocument to="/#about"><a  className="text-white hover:bg-gray-100 block px-3 py-3 rounded-md text-xs font-medium">About</a></Link>
-          <Link reloadDocument to="/#services"><a  className="text-white hover:bg-gray-100 block px-3 py-3 rounded-md text-xs font-medium">Services</a></Link>
-          <Link reloadDocument to="/#contact"><a  className="text-white hover:bg-gray-100 block px-3 py-3 rounded-md text-xs font-medium">Contact</a></Link>
-          <Link reloadDocument to="/#courses" className='flex items-center bg-primary text-white px-10 h-10 mx-2 my-2 justify-center rounded-md text-xs hover:bg-blue-700 font-bold'>Get Started</Link>
+            </Link>
+          ))}
         </div>
       </div>
     </nav>
-    </div>
   );
-};
+}
 
 export default Navbar;

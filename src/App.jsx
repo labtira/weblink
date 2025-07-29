@@ -1,29 +1,30 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home';
-import Book from './pages/Book';
+import Projects from './pages/Projects';
+import ProjectDetails from './pages/ProjectDetails';
+import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
-import English from './assets/img/Flag_Uk.png';
-import German from './assets/img/Flag_of_Germany.png';
-import French from './assets/img/Flag_of_France.png';
 
 function App() {
   return (
-    <React.Fragment>
-		<Helmet>
-        <title>Valued Academy Online Language School - Learn English, French, and German</title>
-        <meta name="description" content="Join our online language school to learn English, French, and German with expert teachers." />
-      	</Helmet>
-			<Routes>
-				<Route path="/" element={ <Home/> } />
-				<Route path="/book/english" element={ <Book language="english" image={English}/> } />
-				<Route path="/book/german" element={ <Book language="german" image={German} /> } />
-				<Route path="/book/french" element={ <Book language="french" image={French} /> } />
-			</Routes>
-			<Footer/>
-		</React.Fragment>
+    <div className="min-h-screen text-white">
+      <div>
+        <Navbar />
+        <Helmet>
+          <title>MEHDI, Software Engineer, Graphic Designer</title>
+          <meta name="description" content="Mehdi is a software engineer and graphic designer with a passion for creating beautiful and functional websites and applications." />
+        </Helmet>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:id" element={<ProjectDetails />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </div>
   );
 }
 
