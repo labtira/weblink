@@ -12,6 +12,15 @@
     },
     {
       "id": 2,
+      "title": "Emmora Logo",
+      "category": "design",
+      "description": "A modern logo for a online jewerly store.",
+      "image": "/img/Projects/emmora.png",
+      "technologies": ["Illustrator"],
+      "link": "https://weblink.website"
+    },
+    {
+      "id": 3,
       "title": "Moroccan Cars Website",
       "category": "web",
       "description": "A modern website for a car rental company.",
@@ -20,49 +29,49 @@
       "link": "https://moroccancars.pages.dev/"
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "Postex Logo",
       "category": "design",
       "description": "A modern logo for a web agency.",
       "image": "/img/Projects/postexlogo.png",
       "technologies": ["Illustrator"],
-      "link": "https://itsmehdi.co"
+      "link": "https://weblink.website"
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "Postex Website",
       "category": "web",
       "description": "A modern website for a web agency.",
       "image": "/img/Projects/postexweb.png",
       "technologies": ["React", "Tailwind CSS"],
-      "link": "https://itsmehdi.co"
+      "link": "https://weblink.website"
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "Refined Logo",
       "category": "design",
       "description": "A modern logo for a rental car company.",
       "image": "/img/Projects/refinedlogo.png",
       "technologies": ["Illustrator"],
-      "link": "https://itsmehdi.co"
+      "link": "https://weblink.website"
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "Weblink Logo",
       "category": "design",
       "description": "A modern logo for a web design agency.",
       "image": "/img/Projects/weblinklogo.png",
       "technologies": ["Illustrator"],
-      "link": "https://itsmehdi.co"
+      "link": "https://weblink.website"
     },
     {
-      "id": 7,
+      "id": 8,
       "title": "Sirada Logo",
       "category": "design",
       "description": "A modern logo for a rental car agency.",
       "image": "/img/Projects/carlogo.png",
       "technologies": ["Illustrator"],
-      "link": "https://itsmehdi.co"
+      "link": "https://weblink.website"
     }
   ]
 }
