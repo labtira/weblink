@@ -25,7 +25,7 @@ function Home() {
             {/* Web Dev Section */}
             <div className="rounded-[16px] transition-all duration-500 backdrop-blur-xl bg-gradient-to-b from-black/10 to-black/30 shadow-[0_-8px_32px_rgba(0,0,0,0.12)] p-5 grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 lg:mb-12 border border-[#282828] ">
               <div className="flex flex-col justify-center">
-                <h2 className="text-2xl lg:text-4xl font-bold mb-6 lg:mb-8 tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">Weblink®</h2>
+                <h2 className="text-2xl lg:text-3xl font-bold mb-6 lg:mb-8 tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">Weblink®</h2>
                 <p className="text-zinc-500 mb-8 lg:mb-10 text-sm  max-w-xl">
                   At Weblink, we fuse the logic of software engineering with the artistry of digital design to create seamless, engaging web experiences. From clean, scalable code to striking visual identities, we bring bold ideas to life online crafting websites that are not only beautiful, but built to perform.
                 </p>
