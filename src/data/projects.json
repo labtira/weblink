@@ -25,7 +25,7 @@
       "category": "web",
       "description": "A modern website for a car rental company.",
       "image": "/img/Projects/MCars.png",
-      "technologies": ["React", "Tailwind CSS"],
+      "technologies": ["React"],
       "link": "https://moroccancars.pages.dev/"
     },
     {
@@ -43,7 +43,7 @@
       "category": "web",
       "description": "A modern website for a web agency.",
       "image": "/img/Projects/postexweb.png",
-      "technologies": ["React", "Tailwind CSS"],
+      "technologies": ["React"],
       "link": "https://weblink.website"
     },
     {

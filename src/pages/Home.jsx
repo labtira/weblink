@@ -59,9 +59,14 @@ function Home() {
                 </p>
               </div>
               
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
+              <div className="grid grid-cols-2 sm:grid-cols-2 gap-6 mb-12">
                 {featuredProjects.map((project) => (
-                  <div key={project.id} className="rounded-[16px] overflow-hidden transition-all duration-500 backdrop-blur-xl bg-gradient-to-b from-black/10 to-black/30  shadow-[0_-8px_32px_rgba(0,0,0,0.12)] border border-[#282828] group">
+                  <Link 
+                        to={`/projects/${project.id}`}
+                        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                        key={project.id} className="rounded-[16px] overflow-hidden transition-all duration-500 backdrop-blur-xl bg-gradient-to-b from-black/10 to-black/30  shadow-[0_-8px_32px_rgba(0,0,0,0.12)] border border-[#282828] group"
+                      >
+                      
                     <div className="aspect-video">
                       <img 
                         src={project.image}
@@ -74,19 +79,19 @@ function Home() {
                         {project.technologies.map((tech, index) => (
                           <span 
                             key={index}
-                            className="px-3 py-1.5 bg-darkgrey/30 rounded-lg text-sm  text-zinc-500"
+                            className="px-3 py-1.5 bg-darkgrey/30 rounded-lg text-xs sm:text-sm  text-zinc-500"
                           >
                             {tech}
                           </span>
                         ))}
                       </div>
-                      <h3 className="text-lg lg:text-xl font-bold my-4 tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
+                      <h3 className="text-sm sm:text-xl font-bold my-4 tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
                         {project.title}
                       </h3>
                       <p className="text-zinc-500 mb-6 text-xs">
                         {project.description}
                       </p>
-                      <Link 
+                      {/* <Link 
                         to={`/projects/${project.id}`}
                         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                         className="p-4 bg-darkgrey/30 rounded-xl  transition-all  shadow-md group inline-flex focus:outline-none"
@@ -94,9 +99,11 @@ function Home() {
                         <svg className="w-6 h-6 transform group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none">
                           <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
-                      </Link>
+                      </Link> */}
                     </div>
-                  </div>
+                      </Link>
+                  
+                 
                 ))}
               </div>
 
