@@ -23,7 +23,7 @@ function Home() {
             
 
             {/* Web Dev Section */}
-            <div className="rounded-[16px] transition-all duration-500 backdrop-blur-xl bg-gradient-to-b from-black/10 to-black/30 shadow-[0_-8px_32px_rgba(0,0,0,0.12)] p-5 grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 lg:mb-12 border border-[#282828] ">
+            <div className="rounded-[16px] transition-all duration-500 backdrop-blur-xl bg-gradient-to-b from-black/10 to-black/30 shadow-[0_-8px_32px_rgba(0,0,0,0.12)] p-5 grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 lg:mb-12 border border-[#888a914a] ">
               <div className="flex flex-col justify-center">
                 <h2 className="text-2xl lg:text-3xl font-bold mb-6 lg:mb-8 tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">Weblink®</h2>
                 <p className="text-zinc-500 mb-8 lg:mb-10 text-sm  max-w-xl">
@@ -31,7 +31,7 @@ function Home() {
                 </p>
                 <Link 
                   to="/contact"
-                  className="w-full sm:w-auto px-8 py-3 bg-darkgrey/30 rounded-lg flex items-center justify-center gap-3  transition-all text-lg  shadow-md group focus:outline-none"
+                  className="w-full sm:w-auto px-8 py-3 bg-darkgrey/30 rounded-lg flex items-center justify-center gap-3  transition-all text-lg  shadow-md group focus:outline-none border border-[#888a914a]"
                 >
                   Get In Touch
                   <svg className="w-5 h-5 lg:w-6 lg:h-6 transform group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none">
@@ -64,7 +64,7 @@ function Home() {
                   <Link 
                         to={`/projects/${project.id}`}
                         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                        key={project.id} className="rounded-[16px] overflow-hidden transition-all duration-500 backdrop-blur-xl bg-gradient-to-b from-black/10 to-black/30  shadow-[0_-8px_32px_rgba(0,0,0,0.12)] border border-[#282828] group"
+                        key={project.id} className="rounded-[16px] overflow-hidden transition-all duration-500 backdrop-blur-xl bg-gradient-to-b from-black/10 to-black/30  shadow-[0_-8px_32px_rgba(0,0,0,0.12)] border border-[#888a914a] group"
                       >
                       
                     <div className="aspect-video">
@@ -79,7 +79,7 @@ function Home() {
                         {project.technologies.map((tech, index) => (
                           <span 
                             key={index}
-                            className="px-3 py-1.5 bg-darkgrey/30 rounded-lg text-xs sm:text-sm  text-zinc-500"
+                            className="px-3 py-1.5 bg-darkgrey/30 rounded-lg border border-[#888a914a] text-xs sm:text-sm  text-zinc-500"
                           >
                             {tech}
                           </span>
