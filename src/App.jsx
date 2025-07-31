@@ -14,8 +14,7 @@ function App() {
       <div>
         <Navbar />
         <Helmet>
-          <title>MEHDI, Software Engineer, Graphic Designer</title>
-          <meta name="description" content="Mehdi is a software engineer and graphic designer with a passion for creating beautiful and functional websites and applications." />
+          <title>Weblink</title>
         </Helmet>
         <Routes>
           <Route path="/" element={<Home />} />
