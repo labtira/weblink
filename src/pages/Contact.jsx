@@ -40,7 +40,7 @@ function Contact() {
         {/* Contact Form Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-6 mt-20 sm:mt-24 mb-16">
           {/* Contact Info */}
-          <div className="rounded-[16px] transition-all duration-500 backdrop-blur-xl bg-gradient-to-b from-black/10 to-black/30  shadow-[0_-8px_32px_rgba(0,0,0,0.12)] p-6 md:p-8 border border-[#282828] ">
+          <div className="rounded-[16px] transition-all duration-500 backdrop-blur-xl bg-gradient-to-b from-black/10 to-black/30  shadow-[0_-8px_32px_rgba(0,0,0,0.12)] p-6 md:p-8 border border-[#888a914a] ">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
               Get in Touch
             </h2>
@@ -50,7 +50,7 @@ function Contact() {
             <div className="space-y-6">
               <a href="mailto:itsmehdi.co.0707547044@gmail.com" className='hover:text-white transition-colors flex items-center gap-3'>
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-darkgrey/30 flex items-center justify-center border border-[#282828]">
+                  <div className="w-12 h-12 rounded-full bg-darkgrey/30 flex items-center justify-center border border-[#888a914a]">
                     <i className="fas fa-envelope text-xl"></i>
                   </div>
                   <div>
@@ -61,7 +61,7 @@ function Contact() {
               </a>
               <a href="tel:+212707547044" className='hover:text-white transition-colors flex items-center gap-3'>
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-darkgrey/30 flex items-center justify-center border border-[#282828]">
+                  <div className="w-12 h-12 rounded-full bg-darkgrey/30 flex items-center justify-center border border-[#888a914a]">
                     <i className="fas fa-phone text-xl"></i>
                   </div>
                   <div>
@@ -72,7 +72,7 @@ function Contact() {
               </a>
               <a href="https://www.google.com/maps" className='hover:text-white transition-colors flex items-center gap-3'>
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-darkgrey/30 flex items-center justify-center border border-[#282828]">
+                  <div className="w-12 h-12 rounded-full bg-darkgrey/30 flex items-center justify-center border border-[#888a914a]">
                     <i className="fas fa-map-marker-alt text-xl"></i>
                   </div>
                   <div>
@@ -84,7 +84,7 @@ function Contact() {
             </div>
 
             {/* Social Links */}
-            <div className="mt-8 pt-8 border-t border-[#282828]">
+            <div className="mt-8 pt-8 border-t border-[#888a914a]">
               <h3 className="text-lg font-semibold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">Connect With Me</h3>
               <div className="flex gap-4">
                 <a 
@@ -117,7 +117,7 @@ function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="rounded-[16px] transition-all duration-500 backdrop-blur-xl bg-gradient-to-b from-black/10 to-black/30  shadow-[0_-8px_32px_rgba(0,0,0,0.12)] p-6 md:p-8 border border-[#282828] ">
+          <div className="rounded-[16px] transition-all duration-500 backdrop-blur-xl bg-gradient-to-b from-black/10 to-black/30  shadow-[0_-8px_32px_rgba(0,0,0,0.12)] p-6 md:p-8 border border-[#888a914a] ">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
               Send Message
             </h2>
