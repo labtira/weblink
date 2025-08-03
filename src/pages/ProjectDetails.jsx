@@ -67,7 +67,7 @@ else {
                   href={project.link} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="px-8 py-2 bg-darkgrey/30 rounded-md inline-flex items-center gap-3 hover:from-[#1A1A1A] hover:to-[#888a914a] transition-all text-sm border border-[#888a914a] hover:border-[#333333] shadow-md group"
+                  className="px-8 py-2 bg-darkgrey/30 rounded-md inline-flex items-center gap-3 hover:from-[#1A1A1A] hover:to-[#888a914a] transition-all text-sm  hover:border-[#333333] shadow-md group"
                   aria-label={`Visit ${project.title} project website`}
                 >
                   Visit Project

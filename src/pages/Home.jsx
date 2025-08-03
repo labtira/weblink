@@ -31,7 +31,7 @@ function Home() {
                 </p>
                 <Link 
                   to="/contact"
-                  className="w-full sm:w-auto px-8 py-3 bg-darkgrey/30 rounded-lg flex items-center justify-center gap-3  transition-all text-lg  shadow-md group focus:outline-none border border-[#888a914a]"
+                  className="w-full sm:w-auto px-8 py-3 bg-darkgrey/30 rounded-lg flex items-center justify-center gap-3  transition-all text-lg  shadow-md group focus:outline-none "
                 >
                   Get In Touch
                   <svg className="w-5 h-5 lg:w-6 lg:h-6 transform group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none">
@@ -79,7 +79,7 @@ function Home() {
                         {project.technologies.map((tech, index) => (
                           <span 
                             key={index}
-                            className="px-3 py-1.5 bg-darkgrey/30 rounded-lg border border-[#888a914a] text-xs sm:text-sm  text-zinc-500"
+                            className="px-3 py-1.5 bg-darkgrey/30 rounded-lg  text-xs sm:text-sm  text-zinc-500"
                           >
                             {tech}
                           </span>

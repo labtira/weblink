@@ -50,7 +50,7 @@ function Contact() {
             <div className="space-y-6">
               <a href="mailto:itsmehdi.co.0707547044@gmail.com" className='hover:text-white transition-colors flex items-center gap-3'>
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-darkgrey/30 flex items-center justify-center border border-[#888a914a]">
+                  <div className="w-12 h-12 rounded-full bg-darkgrey/30 flex items-center justify-center ">
                     <i className="fas fa-envelope text-xl"></i>
                   </div>
                   <div>
@@ -61,7 +61,7 @@ function Contact() {
               </a>
               <a href="tel:+212707547044" className='hover:text-white transition-colors flex items-center gap-3'>
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-darkgrey/30 flex items-center justify-center border border-[#888a914a]">
+                  <div className="w-12 h-12 rounded-full bg-darkgrey/30 flex items-center justify-center ">
                     <i className="fas fa-phone text-xl"></i>
                   </div>
                   <div>
@@ -72,7 +72,7 @@ function Contact() {
               </a>
               <a href="https://www.google.com/maps" className='hover:text-white transition-colors flex items-center gap-3'>
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-darkgrey/30 flex items-center justify-center border border-[#888a914a]">
+                  <div className="w-12 h-12 rounded-full bg-darkgrey/30 flex items-center justify-center ">
                     <i className="fas fa-map-marker-alt text-xl"></i>
                   </div>
                   <div>

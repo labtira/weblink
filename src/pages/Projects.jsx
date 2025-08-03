@@ -108,7 +108,7 @@ function Projects() {
                   {project.technologies.map((tech, index) => (
                     <span 
                       key={index}
-                      className="px-3 py-1.5 bg-darkgrey/30 rounded-lg text-xs sm:text-sm border border-[#888a914a] text-zinc-500"
+                      className="px-3 py-1.5 bg-darkgrey/30 rounded-lg text-xs sm:text-sm  text-zinc-500"
                     >
                       {tech}
                     </span>
