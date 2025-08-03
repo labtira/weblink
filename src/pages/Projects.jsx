@@ -89,7 +89,7 @@ function Projects() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
           {currentProjects.map((project) => (
             <Link 
                         to={`/projects/${project.id}`}
